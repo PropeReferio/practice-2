@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Hello World" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/fullstack-tutorial" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/react/five-star" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/react/hello-bare-react" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/react/hello-world-react-native" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/react/like-button" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/react/nav5" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/react/portfolio-react" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/react/rate-colors-react" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/react/recipes-cra-app" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/react/to-do-list" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/recipes-app" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/styles-practice" vcs="Git" />
+  </component>
+</project>

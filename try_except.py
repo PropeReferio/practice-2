@@ -17,4 +17,4 @@ else:
 finally:
 	#This always happens, regardless of errors
 	# Useful for closing files, closing connections, etc.
-	pass
+	print('We\'re done!!')

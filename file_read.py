@@ -9,12 +9,14 @@ with open('test.txt', 'r') as f: #Avoids the need to .close() Best practice
 	while len(f_contents) > 0:
 		print(f_contents, end='*')
 		print(f.tell()) #Tells us how far into the file we are
+		# f.seek(f.tell()-6)
 		f_contents = f.read(size_to_read)
 	
 	f.seek(5) # Go back to the 5th character of the file
 	print('back to the 5th char...')
 
-	for line in f: # This is a good practice, because with large files, taking the whole contents can be a memory issue. This
+	for line in f: # This is a good practice, because with large files, taking
+		# the whole contents can be a memory issue. This
 		print(line, end='') #Eliminates this problem.
 	
 	f_contents = f.read(20) # Only the first 20 characters
