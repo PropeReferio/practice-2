@@ -1,3 +1,12 @@
-Logfile started: 10/18/20 23:48:26
-Second append to logfile: 
-Second append to logfile: 10/19/20 08:55:13)
+Logfile Started
+Sun Nov 15 11:26:28 2020 New user added
+Sun Nov 15 11:26:29 2020 New user added
+Sun Nov 15 11:26:29 2020 New user added
+Sun Nov 15 11:26:30 2020 New blog post
+Sun Nov 15 11:26:31 2020 New message received
+Sun Nov 15 11:26:32 2020 New message received
+Sun Nov 15 11:26:32 2020 New message received
+Sun Nov 15 11:26:33 2020 New user added
+Sun Nov 15 11:26:34 2020 New blog post
+Sun Nov 15 11:26:35 2020 New blog post
+Logging complete
