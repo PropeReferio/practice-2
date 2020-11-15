@@ -1,7 +1,8 @@
 def decorator_function(orig_func):
-	def wrapper_func():
+	def wrapper_func(*args, **kwargs): #Args and kwargs enable the passing of
+		# any number of arguments
 		print(f"Wrapper executed this before {orig_func.__name__}")
-		return orig_func()
+		return orig_func(*args, **kwargs)
 	return wrapper_func
 
 # def display():
@@ -15,4 +16,9 @@ def decorator_function(orig_func):
 def display(): #The decorator function takes the function on the following line
 	print('display function ran') #as its argument
 
+@decorator_function
+def print_info(name, age):
+	print(f"My name is {name} and I'm {age} years old.")
+
+print_info('Bo', 39)
 display()
