@@ -5,22 +5,6 @@ def decorator_function(orig_func):
 		return orig_func(*args, **kwargs)
 	return wrapper_func
 
-class decorator_class(object):
-
-	def __init__(self, orig_func):
-		self.orig_func = orig_func
-
-	def __call__(self, *args, **kwargs):
-		print(f"call method executed this before {self.orig_func.__name__}")
-		return self.orig_func(*args, **kwargs)
-
-@decorator_class
-def woop(name='johnny'):
-	print(f"{name} {name} WOOP {name}")
-
-woop('janie')
-woop()
-
 # def display():
 # 	print('display function ran')
 
