@@ -5,6 +5,20 @@ def decorator_function(orig_func):
 		return orig_func(*args, **kwargs)
 	return wrapper_func
 
+
+def timer(orig_func):
+	import time
+
+	def wrapper_func(*args, **kwargs):
+		start = time.time()
+		result = orig_func(*args, **kwargs)
+		stop = time.time() - start
+		print(f"Time elapsed: {stop}")
+		return result
+
+	return wrapper_func
+
+
 class decorator_class(object):
 
 	def __init__(self, orig_func):
@@ -14,7 +28,8 @@ class decorator_class(object):
 		print(f"call method executed this before {self.orig_func.__name__}")
 		return self.orig_func(*args, **kwargs)
 
-@decorator_class
+# @decorator_class
+@timer
 def woop(name='johnny'):
 	print(f"{name} {name} WOOP {name}")
 
