@@ -15,10 +15,12 @@ def merge(a, b):
 		c.extend(b[b_idx:])
 	return c
 
-print(merge([1,3,5,7], [2,4,6,8,9,10,11]))
+# print(merge([1,3,5,7], [2,4,6,8,9,10,11]))
 def merge_sort(arr):
-	if len(arr) == 1: return arr
+	if not isinstance(arr, list):
+		return 'Input is not a list'
+	if len(arr) <= 1: return arr
 	left, right = merge_sort(arr[:len(arr)//2]), merge_sort(arr[len(arr)//2:])
 	return merge(left, right)
 
-print(merge_sort([4,1,6,9,10,2,34,21]))
+# print(merge_sort([4,1,6,9,10,2,34,21]))
